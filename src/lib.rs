@@ -2379,6 +2379,7 @@ impl Build {
             "i686-uwp-windows-gnu" => Some("i686-w64-mingw32"),
             "i686-unknown-linux-musl" => Some("musl"),
             "i686-unknown-netbsd" => Some("i486--netbsdelf"),
+            "loongarch64-unknown-linux-gnu" => Some("loongarch64-linux-gnu"),
             "mips-unknown-linux-gnu" => Some("mips-linux-gnu"),
             "mips-unknown-linux-musl" => Some("mips-linux-musl"),
             "mipsel-unknown-linux-gnu" => Some("mipsel-linux-gnu"),
