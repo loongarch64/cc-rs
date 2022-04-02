@@ -1762,7 +1762,7 @@ impl Build {
                 }
 
                 if target.contains("loongarch64") {
-                    cmd.args.push("-mabi=lp64".into());
+                    cmd.args.push("-mabi=lp64d".into());
                     cmd.args.push("-march=loongarch64".into());
                 }
 
