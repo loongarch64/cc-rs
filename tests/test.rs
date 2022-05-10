@@ -292,6 +292,7 @@ fn gnu_shared() {
 }
 
 #[test]
+#[cfg(any(host_arch = "x86_64", host_arch = "i386"))]
 fn gnu_flag_if_supported() {
     reset_env();
 
@@ -315,6 +316,7 @@ fn gnu_flag_if_supported() {
 }
 
 #[test]
+#[cfg(any(host_arch = "x86", host_arch = "x86_64"))]
 fn gnu_flag_if_supported_cpp() {
     if cfg!(windows) {
         return;
